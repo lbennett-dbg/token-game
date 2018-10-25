@@ -4,16 +4,16 @@ class Token {
         this.id = `token-${index}-${owner.id}`;
         this.dropped = false;
     }
-    
-    /** 
+
+    /**
      * Gets associated htmlToken.
      * @return  {element}   Html element associated with token object.
      */
     get htmlToken() {
         return document.getElementById(this.id);
     }
-    
-    /** 
+
+    /**
      * Draws new HTML token.
      */
     drawHTMLToken(){
