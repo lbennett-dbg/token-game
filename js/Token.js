@@ -3,6 +3,7 @@ class Token {
         this.owner = owner;
         this.id = `token-${index}-${owner.id}`;
         this.dropped = false;
+        this.columnLocation = 0;
     }
 
     /**
@@ -22,5 +23,17 @@ class Token {
         token.setAttribute('id', this.id);
         token.setAttribute('class', 'token');
         token.style.backgroundColor = this.owner.color;
+    }
+
+    get offsetLeft() {
+
+    }
+
+    moveLeft() {
+
+    }
+
+    moveRight() {
+        
     }
 }
